@@ -1,0 +1,47 @@
+<h1> Photo Upload </h1>
+<nc-darkroom image="image"
+             on-crop="image_changed(image)"
+             history="true"
+             crop="{}"
+             rotate="true"
+             save="{}">
+</nc-darkroom>
+
+<div>Select an image file: <input type="file" id="fileInput" /></div>
+
+<form ng-submit="uploadfile()">
+  <input type="submit" ng-click="uploadFile()">Upload</a>
+</form>
+
+{{response}}
+<link rel="stylesheet" type="text/css" href="http://mattketmo.github.io/darkroomjs/build/darkroom.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://mattketmo.github.io/darkroomjs/build/darkroom.js" type="text/javascript" charset="utf-8"></script>
+<!-- <img id="target" src="images/yeoman.png"/> -->
+
+<!--
+<canvas id="canvas"></canvas>
+
+<img ng-if="!tools.crop.show" ng-src="{{obj.src}}" width="300px"/>
+<div ng-if="tools.crop.show" ng-jcrop="obj.src" selection="obj.coords" thumbnail="obj.thumbnail"></div>
+<a href="" ng-click="tools.show=!tools.show">Edit</a> -->
+
+<!-- <div ng-if="tools.show">Tools</br>
+  <a ng-if="!tools.crop.show" href="" ng-click="tools.crop.show=!tools.crop.show">Crop</a>
+  <a ng-if="tools.crop.show" href="" ng-click="tools.crop.show=!tools.crop.show">Use Crop</a>
+  <a ng-if="!tools.crop.show" href="">Rotate Left</a>
+  <a ng-if="!tools.crop.show" href="">Rotate Right</a>
+  <a href="">Revert</a>
+  <a href="" ng-click="tools.show">Finsihed edits</a>
+</div> -->
+
+<!-- <div>Select an image file: <input type="file" id="fileInput" /></div>
+<div class="cropArea">
+  <img-crop image="myImage" result-image="myCroppedImage" area-type="square"></img-crop>
+</div>
+<div>Cropped Image:</div>
+<canvas id="myCanvas" width=300 height=300></canvas>
+<!-- <div><img ng-src="{{myCroppedImage}}" /></div> -->
+
+<!-- <a href="" ng-click="rotateLeft()">Rotate Left</a>
+<a href="" ng-click="rotateLeft()">Rotate Right</a> -->
