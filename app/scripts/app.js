@@ -16,7 +16,6 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'angular-darkroom'
   ])
   .config(function ($routeProvider) {
     $routeProvider
